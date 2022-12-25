@@ -21,15 +21,15 @@
     display: block;
 }
 
-.attribution {
-    font-size: 11px;
+footer {
+    font-size: 1rem;
     text-align: center;
     position: absolute;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     bottom: 0;
 }
 
-  .attribution a {
+  footer a {
     color: hsl(228, 45%, 44%);
 }
 
@@ -39,27 +39,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f2e9e2;
+    background-color: hsl(30, 38%, 92%)
   }
 
   .card {
-    height: 458px;
-    width: 630px;
-    background-color: #ffffff;
+    width: 40em;
+    background-color: hsl(0, 0%, 100%);
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    border-radius: 20px;
+    border-radius: 2em;
   }
 
   .card img {
     height: 458px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 2em 0 0 2em;
     grid-column: span 1 / span 1;
   }
 
   .content {
     grid-column: span 1 / span 1;
-    padding: 25px 40px;
+    padding: 1.5em 2.5em;
   }
 
   .content > h1 {
@@ -82,7 +81,7 @@
   }
 
   .prices > h1 {
-    color: #3E8068;
+    color: hsl(158, 36%, 37%)
   }
 
   .prices > p {
@@ -94,14 +93,15 @@
 
   button{
     width: 100%;
-    height: 56px;
+    height: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.5em;
-    background-color: #3E8068;
-    color: #ffffff;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
     border: none;
+    cursor: pointer;
   }
 
   button:hover {
@@ -109,8 +109,8 @@
   }
 
 button > img {
-    height: 14px;
-    width: 14px;
+    height: 1em;
+    width: 1em;
     object-fit: contain;
     margin-right: 10px;
 }
@@ -178,5 +178,8 @@ button > img {
     button {
         height: 40px;
         font-size: x-small;
+    }
+    footer{
+      position: static;
     }
 }
